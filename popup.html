@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Set Base URL</title>
+    <title>Edit Ghost</title>
     <style>
-      body { font-family: sans-serif; padding: 10px; width: 250px; }
-      input { width: 100%; margin-top: 8px; }
-      button { margin-top: 10px; width: 100%; }
+      body { font-family: sans-serif;
+        padding: 20px;
+        width: 250px; 
+        text-align: center;
+        margin: 0 auto;
+      }
+      input { 
+        width: 226px;
+        margin-top: 8px; 
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #f2f2f2;
+      }
+      button {
+        margin-top: 10px; 
+        width: 250px; 
+        position: relative;
+        padding: 0.5rem 2rem;
+        font-weight: 400;
+        background: black;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        color:aliceblue;
+        border: none;
+        &:hover {
+          background: purple;
+        }
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .logo {
+        background-color: black;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
-    <label for="baseUrl">Base URL:</label>
+    <div class="header">
+      <img src="/icon48.png" alt="Ghost Logo" class="logo">
+    </div>
+    
+    <label for="baseUrl">Set Base URL</label>
     <input type="text" id="baseUrl" placeholder="Base URL of your Ghost Server" />
     <button id="saveBtn">Save</button>
 
