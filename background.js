@@ -17,8 +17,8 @@ chrome.action.onClicked.addListener((tab) => {
       chrome.windows.create({
         url: chrome.runtime.getURL("set-base.html"),
         type: "popup",
-        width: 400,
-        height: 600
+        width: 320,
+        height: 400
       });
     } else if (tab.url.startsWith(base) && !tab.url.endsWith("/edit")) {
       const newUrl = tab.url.endsWith("/") ? tab.url + "edit" : tab.url + "/edit";
@@ -39,8 +39,8 @@ chrome.contextMenus.onClicked.addListener((info) => {
       chrome.windows.create({
         url: chrome.runtime.getURL("set-base.html"),
         type: "popup",
-        width: 400,
-        height: 600
+        width: 320,
+        height: 400
       });
     });
   }

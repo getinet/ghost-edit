@@ -9,6 +9,11 @@
         text-align: center;
         margin: 0 auto;
       }
+
+      a {
+        text-decoration: none;
+        color: #9C1E22;
+      }
       input { 
         width: 226px;
         margin-top: 8px; 
@@ -42,12 +47,32 @@
         border-radius: 10px;
         margin-bottom: 10px;
       }
+
+      footer {
+        position: absolute;
+        bottom: 20px;
+            width: 250px;
+        text-align: center;
+        p {
+          font-size: .825rem;
+        }
+      }
     </style>
   </head>
   <body>
-    <h3>Set Base URL</h3>
+    <div class="header">
+      <img src="/icon48.png" alt="Ghost Logo" class="logo">
+    </div>
+    <div class="content">
+
+    </div><h3>Set Base URL</h3>
     <input id="baseUrl" placeholder="Base URL of your Ghost Server" />
     <button id="save">Save</button>
+    
+
+    <footer>
+      <p>Made in Oakland by <a href="http://mekuriageti.net">h&#8226;m&#8226;p</a></p>
+    </footer>
 
     <script src="set-base.js"></script>
   </body>
